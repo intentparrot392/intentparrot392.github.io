@@ -1,0 +1,28 @@
+.codeHighlight {
+    font-family: 'Courier New', monospace;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.tag {
+    color: #6dd1ff;
+}
+
+.keyword {
+    color: #ffb347;
+    font-weight: bold;
+}
+
+.function {
+    color: #ff61a6;
+}
+
+.string {
+    color: #9effa1;
+}
+
+.content {
+    color: #ffffff;
+}

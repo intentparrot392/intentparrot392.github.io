@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of DracoFAAD : A developer.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+    <title>Bird's portfolio</title>
+    <link rel="stylesheet" href="./css/main/pages/index.css">
+    <link rel="stylesheet" href="./css/main/ADev.css">
+    <link rel="shortcut icon" href="./images/DracoIcon.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="navigationContainer">
+        <div class="navigationIconContainer">
+            <a href="./" class="navigationIcon">
+                <p class="navigationIconText">Bird</p>
+                <p class="navigationIconTextMobile">Bird</p>
+            </a>
+        </div>
+        <div class="navigationTabContainer" id="navigationTabContainer">
+            <div class="navigationTab">
+                <a class="navigationButton navigationSelectedTab" href="./">
+                    <p translationid="navigation_portfolio_tab" class="translatable navigationButtonText">Portfolio</p>
+                </a>
+            </div>
+            <div class="navigationTab">
+                <a class="navigationButton" href="./contact.html">
+                    <p translationid="navigation_contact_tab" class="translatable navigationButtonText">Contact</p>
+                </a>
+            </div>
+            <div class="navigationTab">
+                <a class="navigationButton" href="./projects.html">
+                    <p translationid="navigation_projects_tab" class="translatable navigationButtonText">Projects</p>
+                </a>
+            </div>
+        </div>
+        <div class="navigationLanguageSelector">
+            <button onclick="onNavigationLanguageButtonClick()" class="navigationLanguageButton">
+                <img src="images/language.png" alt="Language Selector" class="navigationLanguageButtonIcon">
+            </button>
+            <div id="navigationLanguagePopup" class="hidden navigationLanguagePopup">
+                <button onclick="changeLanguage('en_us')">English</button>
+                <button onclick="changeLanguage('fil_ph')">Filipino</button>
+            </div>
+        </div>
+        <div class="navigationMenuIconContainer">
+            <button class="navigationMenuButton" id="navigationMenuButton">
+                <img src="images/menu.png" alt="" class="navigationMenuButtonIcon">
+            </button>
+        </div>
+        <script>
+            document.getElementById("navigationMenuButton").addEventListener("click", () => {
+                const tabContainer = document.getElementById("navigationTabContainer")
+                if (tabContainer.classList.contains("navigationTabVisible")) {
+                    tabContainer.classList.remove("navigationTabVisible")
+                } else {
+                    tabContainer.classList.add("navigationTabVisible")
+                }
+            })
+        </script>
+    </div>
+
+    <img src="./images/BackgroundPattern.png" alt="BackgroundImage" class="backgroundImage">
+
+    <div class="introduction">
+        <img src="./images/BirdIcon.png" alt="Background" class="introductionIcon">
+        <p translationid="index_introductionText" class="translatable introductionText">I am<br><b>Bird</b></p>
+        <p translationid="index_introductionTextSmall" class="translatable introductionTextSmall codeHighlight">
+    <span class="keyword">print</span><span class="tag">(</span><span class="string">"A Developer"</span><span class="tag">)</span>
+    <br><br>
+
+    <span class="keyword">console</span>.<span class="function">log</span><span class="tag">(</span><span class="string">"A Developer"</span><span class="tag">)</span>
+    <br><br>
+
+    <span class="tag">&lt;</span><span class="keyword">p</span><span class="tag">&gt;</span>
+    <span class="content">A Developer</span>
+    <span class="tag">&lt;/</span><span class="keyword">p</span><span class="tag">&gt;</span>
+    <br><br>
+
+    <span class="keyword">print</span><span class="tag">(</span><span class="string">"A Developer"</span><span class="tag">)</span>
+    <br><br>
+
+    <span class="keyword">Console</span>.<span class="function">WriteLine</span><span class="tag">(</span><span class="string">"A Developer"</span><span class="tag">);</span>
+    <br><br>
+
+    <span class="keyword">System</span>.<span class="function">out</span>.<span class="function">println</span><span class="tag">(</span><span class="string">"A Developer"</span><span class="tag">);</span>
+</p>
+
+
+    </div>
+
+    <div class="aboutme borderBottom">
+        <div class="headerContainer">
+            <p translationid="index_aboutme_header" class="header translatable">About me</p>
+        </div>
+        <p translationid="index_aboutme_content" class="aboutmeContent translatable">
+    Yo! I’m <b>Bird</b>, a 13-year-old developer and creator who’s been coding and making stuff online for a few years now.<br><br>
+    I started when I was about 9, just playing around with <span>C#</span> and <span>Lua</span> while trying to understand how games worked. A year later, I got into <span>Roblox Studio</span> and began making small games and scripts. That’s when I really started to get hooked.<br><br>
+    Around 11, I picked up <span>Java</span> and started experimenting with plugins and random tools. By 12, I had learned <span>HTML</span>, <span>CSS</span>, and <span>JavaScript</span>, which helped me build websites like this one. Been coding for about 4 years now and still going strong.<br><br>
+    Besides coding, I also make <b>Roblox videos</b> and post them on <b>YouTube</b> and <b>TikTok</b>. I love mixing my programming skills with content creation. It’s all about having fun, learning new things, and sharing what I build.<br><br>
+    Right now, I’m working on a few game ideas and expanding my projects while growing my online stuff. Just trying to create cool things that people enjoy and level up a bit more every day.
+</p>
+
+
+    </div>
+    
+    <div class="languages borderBottom">
+        <div class="headerContainer">
+            <p translationid="index_normalLanguage_header" class="header translatable">Languages</p>
+        </div>
+
+        <div class="header2Container">
+            <p translationid="index_normalLanguage_headerNormal" class="header2 translatable">Normal Languages</p>
+        </div>
+
+        <div class="normalLanguageContainer">
+            <div class="normalLanguage">
+                <img class="normalLanguageImage" alt="" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg">
+                <div class="normalLanguageVR"></div>
+                <p translationid="index_normalLanguage_filipino" class="translatable normalLanguageContent">Filipino</p>
+                <p class="normalLanguageRating">5 / 5</p>
+            </div>
+            <div class="normalLanguage">
+                <img class="normalLanguageImage" src="./images/countries/usaFlag.png" alt="">
+                <div class="normalLanguageVR"></div>
+                <p translationid="index_normalLanguage_english" class="translatable normalLanguageContent">English</p>
+                <p class="normalLanguageRating">4 / 5</p>
+            </div>
+        </div>
+
+        <div class="header2Container">
+            <p translationid="index_normalLanguage_headerProgramming" class="header2 translatable">Programming Languages</p>
+        </div>
+
+        <div class="programmingLanguageContainer">
+            <div class="normalLanguage">
+                <img class="normalLanguageImage" src="./images/programmingLanguages/luaIcon.png" alt="">
+                <div class="normalLanguageVR"></div>
+                <p class="normalLanguageContent">LUA</p>
+                <p class="normalLanguageRating">5 / 5</p>
+            </div>
+            <div class="normalLanguage">
+                <img class="normalLanguageImage" src="./images/programmingLanguages/csIcon.png" alt="">
+                <div class="normalLanguageVR"></div>
+                <p class="normalLanguageContent">C#</p>
+                <p class="normalLanguageRating">5 / 5</p>
+            </div>
+            <div class="normalLanguage">
+                <img class="normalLanguageImage" src="./images/programmingLanguages/javaIcon.png" alt="">
+                <div class="normalLanguageVR"></div>
+                <p class="normalLanguageContent">Java</p>
+                <p class="normalLanguageRating">5 / 5</p>
+            </div>
+            <div class="normalLanguage">
+                <img class="normalLanguageImage" src="./images/programmingLanguages/htmlIcon.png" alt="">
+                <div class="normalLanguageVR"></div>
+                <p class="normalLanguageContent">HTML</p>
+                <p class="normalLanguageRating">5 / 5</p>
+            </div>
+            <div class="normalLanguage">
+                <img class="normalLanguageImage" src="./images/programmingLanguages/jsIcon.png" alt="">
+                <div class="normalLanguageVR"></div>
+                <p class="normalLanguageContent">JS</p>
+                <p class="normalLanguageRating">5 / 5</p>
+            </div>
+            <div class="normalLanguage">
+                <img class="normalLanguageImage" src="./images/programmingLanguages/cssIcon.png" alt="">
+                <div class="normalLanguageVR"></div>
+                <p class="normalLanguageContent">CSS</p>
+                <p class="normalLanguageRating">4 / 5</p>
+            </div>
+            <div class="normalLanguage">
+                <img class="normalLanguageImage" src="./images/programmingLanguages/phpIcon.png" alt="">
+                <div class="normalLanguageVR"></div>
+                <p class="normalLanguageContent">PHP</p>
+                <p class="normalLanguageRating">4 / 5</p>
+            </div>
+            <div class="normalLanguage">
+                <img class="normalLanguageImage" src="./images/programmingLanguages/cppIcon.png" alt="">
+                <div class="normalLanguageVR"></div>
+                <p class="normalLanguageContent">C++</p>
+                <p class="normalLanguageRating">3 / 5</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="examples">
+        <div class="headerContainer">
+            <p translationid="index_examples_header" class="header translatable">Examples</p>
+        </div>
+    </div>
+<style type="text/css"></style></body></html>

@@ -1,0 +1,103 @@
+body {
+    overflow-y: hidden;
+}
+
+a {
+    color: cyan;
+}
+
+.contact {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactText {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contactText2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.contactText3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contactButtonsContainer {
+    display: flex;
+}
+
+.contactButton {
+    padding: 20px 20px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contactButton:not(:first-child) {
+    margin-left: 10px;
+}
+
+.contactButton img {
+    pointer-events: none;
+    width: 75px;
+}
+
+.contactButton p {
+    font-size: 35px;
+}
+
+.contactButton.discord {
+    background-color: #1e2148;
+    border: #5865F2 2px solid;
+}
+
+.contactButton.discord:hover {
+    background-color: #181b3a;
+}
+
+.contactButton.discord:active {
+    background-color: #111329;
+}
+
+.contactButton.roblox {
+    background-color: rgb(72, 72, 72);
+    border: 2px solid rgb(194, 194, 194);
+}
+
+.contactButton.roblox:hover {
+    background-color: rgb(196, 184, 184)
+}
+
+.contactButton.roblox:active {
+    background-color: rgb(57, 57, 57);
+}
+
+.contactButton.youtube {
+    background-color: #3b0b0b;
+    border: 2px solid #ff3c0b;
+}
+
+.contactButton.youtube p {
+    color: #e70101;
+}
+
+.contactButton.youtube:hover {
+    background-color: #290707;
+}
+
+.contactButton.youtube:active {
+    background-color: #180404;
+}
